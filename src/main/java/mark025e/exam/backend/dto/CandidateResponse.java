@@ -11,9 +11,10 @@ import mark025e.exam.backend.entity.Party;
 @NoArgsConstructor
 public class CandidateResponse {
     private String name;
-    private Party party;
+    private String party;
     public CandidateResponse(Candidate candidate) {
         this.name = candidate.getName();
-        this.party = candidate.getParty();
+        this.party = candidate.getParty().getLetter();
     }
+
 }
