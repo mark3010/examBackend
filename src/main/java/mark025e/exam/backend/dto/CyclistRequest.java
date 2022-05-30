@@ -7,8 +7,12 @@ import lombok.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class CandidateRequest {
+public class CyclistRequest {
     private int id;
     private String name;
-    private String party;
+    private String team;
+    private int age;
+    private int timeTotal;
+    private int sprintPoints;
+    private int mountainPoints;
 }
