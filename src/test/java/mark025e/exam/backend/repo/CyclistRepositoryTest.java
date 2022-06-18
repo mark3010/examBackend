@@ -21,7 +21,7 @@ class CyclistRepositoryTest {
     TeamRepository teamRepository;
 
 
-    @BeforeAll
+    @BeforeEach
     void setup() {
         teamRepository.saveAll( List.of(
                 Team.builder()
