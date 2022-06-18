@@ -2,6 +2,7 @@ package mark025e.exam.backend.repo;
 
 import mark025e.exam.backend.entity.Cyclist;
 import mark025e.exam.backend.entity.Team;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,7 @@ class CyclistRepositoryTest {
     TeamRepository teamRepository;
 
 
-    @BeforeEach
+    @BeforeAll
     void setup() {
         teamRepository.saveAll( List.of(
                 Team.builder()

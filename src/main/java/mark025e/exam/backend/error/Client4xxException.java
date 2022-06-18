@@ -4,6 +4,7 @@ import org.springframework.http.HttpStatus;
 
 public class Client4xxException extends RuntimeException{
     HttpStatus status;
+
     public Client4xxException(String message) {
         super(message);
         this.status = HttpStatus.BAD_REQUEST;

@@ -18,7 +18,7 @@ public class Team {
     private int id;
     private String name;
 
-    @OneToMany(mappedBy = "team", cascade = CascadeType.ALL) //el persist? el merge?
+    @OneToMany(mappedBy = "team", cascade = CascadeType.ALL)
     private Set<Cyclist> cyclists = new HashSet<>();
 
     public Team(String name) {

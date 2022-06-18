@@ -19,7 +19,7 @@ public class CyclistController {
     @GetMapping
     public List<CyclistResponse> getAllCyclists(@RequestParam(value = "team", required = false) String team) {
         return cyclistService.getAllCyclist(team);
-        // query param written as URL + ?party=A where A is partyletter
+        // query param written as URL + ?team=A where A is team
     }
 
     @GetMapping("/{id}")
